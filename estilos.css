@@ -1,0 +1,96 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{font-family: 'Readex Pro', sans-serif;
+}
+.header{
+    background-color: #a9a9a9;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.header__container{
+    display: flex;
+    justify-content: space-around;
+    align-items: right;
+    flex-wrap: wrap;
+}
+.header_nav ul{
+padding: 2rem;
+list-style-type: none;
+}
+.header__navbar li{
+    display: flex;
+    justify-content: right;
+    align-items: wrap;
+    flex-wrap: wrap;
+}
+.header__navbar a{
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: rgb(65, 61, 61); 
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem; 
+  background-color: rgb(119, 118, 116);
+  padding: 1.1rem;
+}
+.header__titulo{
+    color:darkslategrey;
+    font-size: 5rem;
+    padding: 2rem;   
+}
+.section__servicios{
+    background-color: grey;
+}
+.servicios{
+    background-color: rgb(46, 48, 43);
+    display: inline-block;
+    margin-left: 20px;
+    background-color: rgb(106, 160, 161);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.imagenservicios{
+    width: 100%;
+    height: 250px;
+}
+
+.imagenservicios:hover{
+    filter: grayscale(100);
+}
+
+.logo{
+    margin-left: 20px;
+}
+.footer{
+    background-color: rgb(65, 65, 60);   
+    color:black
+}
+
+.gridPadre{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "imagenSucesiones imagenJubilaciones imagenDespidos imagenAccidentesdetrabajo"
+    ;
+}
+.imagenSucesiones{
+    grid-area: imagenSucesiones;
+}
+.imagenJubilaciones{
+    grid-area: imagenJubilaciones;
+}
+.imagenDespidos{
+    grid-area: imagenDespidos;
+}
+.imagenAccidentesdetrabajo{
+    grid-area: imagenAccidentesdetrabajo;
+}
